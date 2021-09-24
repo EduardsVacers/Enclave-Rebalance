@@ -1,0 +1,334 @@
+﻿capital = 159
+
+set_country_flag = caps_exempt
+
+set_war_support = 0.20
+set_stability = 0.35
+oob = "ERB_2265"
+###############################
+# TECHNOLOGY
+###############################
+
+add_research_slot = 2
+set_technology = {
+
+	infantry_tech_level_tribal = 1
+	infantry_tech_level_settler = 1
+	infantry_tech_level_scientific = 1
+	support_tech_level_tribal = 1
+	support_tech_level_settler = 1
+	support_tech_level_scientific = 1
+	special_forces_tech_level_tribal = 1
+	special_forces_tech_level_settler = 1
+	power_armour_tech_level_settler = 1
+	power_armour_tech_level_scientific = 1
+	vehicles_tech_level_tribal = 1
+	vehicles_tech_level_settler = 1
+	robotics_tech_level_tribal = 1
+	robotics_tech_level_settler = 1
+	air_tech_level_tribal = 1
+	air_tech_level_settler = 1
+	naval_tech_level_tribal = 1
+	naval_tech_level_settler = 1
+	tools_tech_level_tribal = 1
+	tools_tech_level_settler = 1
+	habitation_tech_level_tribal = 1
+	habitation_tech_level_settler = 1
+	exploitation_tech_level_tribal = 1
+	exploitation_tech_level_settler = 1
+	electronics_tech_level_tribal = 1
+	electronics_tech_level_settler = 1
+	elite_army = 1
+	standard_weaponry_tech = 1
+	melee_weaponry_tech_1 = 1
+	ballistic_weaponry_tech_1 = 1
+	tribal_civilization = 1
+	settled_civilization = 1
+	scientific_civilization = 1
+	nautics_tech_1 = 1
+	energy_weaponry_tech_1 = 1
+	energy_weaponry_tech_2 = 1
+	spec_ops_equipment_tech_1 = 1
+	spec_ops_equipment_tech_2 = 1
+	hardening_armour_tech = 1
+	simple_servo_tech = 1
+	stripped_pa_tech = 1
+	scav_pa_tech = 1
+	underground_industry_tech = 1
+	vault_industry_tech = 1
+	power_armour_enclave_1 = 1
+	vertibird_tech = 1
+	vertibird_cas_tech = 1
+	implant_tech_visibility_tech = 1
+
+	#special_forces_tech_level_scientific = 1
+	#robotics_tech_level_scientific = 1
+	#vehicles_tech_level_scientific = 1
+	#air_tech_level_scientific = 1
+	#naval_tech_level_scientific = 1
+	#tools_tech_level_scientific = 1
+	#habitation_tech_level_scientific = 1
+	#exploitation_tech_level_scientific = 1
+	#electronics_tech_level_scientific = 1
+}
+
+# set_country_flag = enclave_nation
+
+set_country_flag = not_allowed_to_core_flag
+set_country_flag = generic_decisions_disabled
+set_country_flag = no_generic_manufacturer
+set_country_flag = coring_button_hidden
+set_country_flag = slavery_allowed
+set_country_flag = enclave_nation
+set_country_flag = no_mutants_allowed
+country_lock_all_division_template = yes
+
+# law flags
+set_country_flag = has_unique_manpower_law
+set_country_flag = has_unique_officer_laws
+set_country_flag = has_unique_outsider_laws
+set_country_flag = has_unique_economic_laws
+set_country_flag = has_unique_trade_laws
+set_country_flag = has_unique_press_laws
+set_country_flag = has_unique_slave_laws
+set_country_flag = has_unique_drug_laws
+set_country_flag = has_unique_undesirable_laws
+set_country_flag = has_unique_mutant_recruitment_laws
+
+set_country_flag = do_not_spread_followers_from_this_tag
+set_country_flag = no_overlord_decisions 
+
+# resistance and compliance
+set_country_flag = has_compliance_core_unique_tiers
+set_country_flag = has_compliance_state_unique_tiers
+set_country_flag = has_resistance_state_unique_tiers
+set_country_flag = has_resistance_core_unique_tiers
+set_country_flag = has_unique_occupation_laws
+set_global_flag = development_done_sierra_army_depot 
+
+
+set_country_flag = ignore_puppet_events
+
+# makes resource sabotage less likely
+set_variable = { targeted_sabotage_infrastructure = -1 }
+set_variable = { targeted_sabotage_resources = -1 }
+set_variable = { targeted_sabotage_industry = -1 }
+
+
+
+###############################
+# POLITICS
+###############################
+set_party_name = { ideology = intellectuals long_name = ERB_intellectuals_party name = ERB_intellectuals_party_long }
+set_party_name = { ideology = elites long_name = ERB_elites_party name = ERB_elites_party_long }
+set_party_name = { ideology = ruler long_name = ERB_ruler_party name = ERB_ruler_party_long }
+set_party_name = { ideology = people long_name = ERB_people_party name = ERB_people_party_long }
+
+set_politics = {
+	ruling_party = ruler
+	elections_allowed = no
+}
+
+set_popularities = {
+	people = 20
+	elites = 40
+	intellectuals = 30
+	ruler = 10
+}
+
+###############################
+# RULES
+###############################
+set_rule = { can_declare_war_on_same_ideology = yes }
+set_rule = { can_force_government = no }
+set_rule = { can_send_volunteers = no }
+set_rule = { can_puppet = no }
+set_rule = { can_lower_tension = yes }
+set_rule = { can_only_justify_war_on_threat_country = no }
+set_rule = { can_guarantee_other_ideologies = no }
+set_rule = { can_join_factions = no }
+
+###############################
+# LEADERS
+###############################
+create_country_leader  = {
+	name = "Franklin Anderson"
+	desc = "Anderson_desc"
+	picture = "gfx/leaders/portrait_Anderson.dds"
+	expire = "3000.1.1"
+	ideology = militarist_technocracy
+	traits = {}
+}
+
+create_country_leader  = {
+	name = "Douglas Granite"
+	desc = "Granite_desc"
+	picture = "gfx/leaders/portrait_douglas_enclave.dds"
+	expire = "3000.1.1"
+	ideology = technocracy
+	traits = {}
+}
+
+create_country_leader = {
+	name = "Sergeant Dornan"
+	desc = Dornan_DESC
+	picture = "gfx/leaders/portrait_sarge.dds"
+	expire = "3000.1.1"
+	ideology = benevolent_dictatorship
+	traits = {
+		drill_sargeant
+	}
+}
+create_country_leader = {
+	name = "Chief Engineer R. Bishop"
+	desc = "Dornan_DESC"
+	picture = "gfx/leaders/ENC/Portrait_Enclave_Generic.dds"
+	expire = "3000.1.1"
+	ideology = town_hall_democracy
+	traits = {}
+}
+
+create_field_marshal = {
+	name = "Major General Grimm"
+	portrait_path = "gfx/leaders/ERB/Portrait_Enclave_Generic_6.dds"
+	skill = 5
+	traits = {
+		enc_purist agile_trait
+	}
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = { # Jacob 'Dwemer' Freeman
+	name = "Jacob 'Dwemer' Freeman"
+	portrait_path = "gfx/leaders/ERB/Portrait_Enclave_Generic_11.dds"
+	skill = 2
+	traits = {
+		enc_reformer agile_trait
+	}
+	attack_skill = 2
+	defense_skill = 1
+	planning_skill = 2
+	logistics_skill = 1
+}
+create_corps_commander = { # Lt. Mary Orwich
+	name = "Lt. Mary Orwich"
+	portrait_path = "gfx/leaders/ERB/Portrait_Enclave_Generic_3.dds"
+	skill = 4
+	traits = {
+		enc_purist
+		strong_trait
+	}
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+create_corps_commander = { # Colonel David Stevenson
+	name = "Colonel David Stevenson"
+	portrait_path = "gfx/leaders/ERB/Portrait_Enclave_Generic_8.dds"
+	skill = 2
+	traits = {
+		enc_reformer perceptive_trait
+	}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = { # Lt. Scott Blair
+	name = "Lt. Scott Blair"
+	portrait_path = "gfx/leaders/ERB/Portrait_Enclave_Generic_9.dds"
+	skill = 2
+	traits = {
+		enc_reformer
+		charismatic_trait
+	}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = { # Chris "Hamilton" Regular
+	name = "Chris 'Hamilton' Regular"
+	portrait_path = "gfx/leaders/ERB/Portrait_Enclave_Generic_2.dds"
+	skill = 2
+	traits = {
+		intelligent_trait robotics_expert_trait
+	}
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 2
+}
+create_corps_commander = { # Jack 'Shadow' Churchill
+	name = "Jack 'Shadow' Churchill"
+	portrait_path = "gfx/leaders/ERB/Portrait_Enclave_Generic_10.dds"
+	skill = 4
+	traits = {
+		enc_purist
+		intelligent_trait robotics_expert_trait
+	}
+	attack_skill = 4
+	defense_skill = 1
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+###############################
+# RELATIONS
+###############################
+add_opinion_modifier = { target = NCR modifier = bitterEnemies }
+add_opinion_modifier = { target = BOS modifier = bitterEnemies }
+add_opinion_modifier = { target = ARR modifier = bitterEnemies }
+NCR = {add_opinion_modifier = { target = ERB modifier = bitterEnemies }}
+BOS = {add_opinion_modifier = { target = ERB modifier = bitterEnemies }}
+ARR = {add_opinion_modifier = { target = ERB modifier = bitterEnemies }}
+
+every_country = {
+	add_opinion_modifier = { target = ERB modifier = genocidal_maniacs }
+	ERB = { add_opinion_modifier = { target = PREV modifier = dirty_muties }}
+}
+
+# IDEAS
+add_ideas = {
+	ENC_infighting
+	enc_scientists
+	ENC_officers
+	ENC_special_forces
+
+	enc_complete_chaos
+	enc_protected_by_bunker
+
+	the_remnants
+	enc_outsider_law_none
+	hidden_economy
+	enc_disorganized_economy
+	enc_press_none
+	training_law_navarro_veterans
+
+	no_wages
+}
+
+add_manpower = 500
+
+# 4th of july
+country_event = { id = enc_reformers.23 days = 25 }
+
+ set_variable = {
+	var = enc_rebels_we_have_armed
+	value = 0
+ }
+
+ # AI Strategies to guide the Enclave story
+
+ # we don't want this ever
+ NCR = {
+    add_ai_strategy = {
+        type = declare_war
+        id = CES
+        value = -8000
+    }
+}
