@@ -233,7 +233,7 @@ country_event = {#10  - FRANKLIN PAST - SOLD
 		}
 		add_tech_bonus = {
 			name = motorized_bonus
-			bonus = 0.75
+			bonus = 0.5		#not 0.75
 			uses = 3
 			category = vehicle_tech_category
 		}
@@ -602,7 +602,7 @@ country_event = { #26 - Cloning succes
 	option = { # Eureka!
 		name = enc.26.a
 		set_country_flag = enc_cloning_available_flag
-		add_manpower = 250
+		add_manpower = 100		#not 250
 	}
 }
 country_event = { #27 - Cloning failure
@@ -1120,13 +1120,49 @@ country_event = {#46 - Mexico Challenge
 		if = {
 			limit = {country_exists = RRG }
 			RRG = {
-				create_faction = "The United States of Mexico"
-				add_to_faction = ATE
-				add_to_faction = ITZ
-				add_to_faction = FFI
-				puppet = ARM
-				set_technology = { scientific_civilization = 1 }
-				add_research_slot = 1
+				# create_faction = "The United States of Mexico"
+				give_guarantee = ATE		# not add_to_faction
+				give_guarantee = ITZ
+				give_guarantee = FFI
+				give_guarantee = ARM		# not puppet
+				# set_technology = { scientific_civilization = 1 }
+				# add_research_slot = 1
+			}
+		}
+		if = {
+			limit = {country_exists = ATE }
+			ATE = {
+				give_guarantee = RRG
+				give_guarantee = ITZ
+				give_guarantee = FFI
+				give_guarantee = ARM
+			}
+		}
+		if = {
+			limit = {country_exists = ITZ }
+			ITZ = {
+				give_guarantee = ATE
+				give_guarantee = RRG
+				give_guarantee = FFI
+				give_guarantee = ARM
+			}
+		}
+		if = {
+			limit = {country_exists = FFI }
+			FFI = {
+				give_guarantee = ATE
+				give_guarantee = ITZ
+				give_guarantee = RRG
+				give_guarantee = ARM
+			}
+		}
+		if = {
+			limit = {country_exists = ARM }
+			ARM = {
+				give_guarantee = ATE
+				give_guarantee = ITZ
+				give_guarantee = FFI
+				give_guarantee = RRG
 			}
 		}
 	}

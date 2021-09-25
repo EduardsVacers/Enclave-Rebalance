@@ -3396,10 +3396,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = boslogistictech
-			country_event = { id = enc_reformers.195 }
+			# country_event = { id = enc_reformers.195 }
 		}
 	}
-	focus = {#Diplomacy - BOS - Sweet
+	<#focus = {#Diplomacy - BOS - Sweet
 		id = enc_BOS_vengeance
 		icon = GFX_goal_america_brotherhood_faction
 		ai_will_do = { factor = 1 }
@@ -3424,7 +3424,7 @@ focus_tree = {
 				load_oob = "enc_bos_recruits_2"
 			}
 			custom_effect_tooltip = enc_BOS_vengeance.tt
-		}
+		}#>
 	}
 	focus = {#Reform - war with BOS
 		id = enc_war_with_bos_reform
