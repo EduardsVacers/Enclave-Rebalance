@@ -3283,48 +3283,48 @@ country_event = { #101 Axis of Evil		#look at this
 	is_triggered_only = yes
 	option = { # Bringit
 		name = enc_reformers.101.a
-		<#WBH = {
-			if = {
-				limit = {
-					is_in_faction = yes
-				}
-				leave_faction = yes
-			}
-		}
-		PMR = {
-			if = {
-				limit = {
-					is_in_faction = yes
-				}
-				leave_faction = yes
-			}
-		}
-		TOC = {
-			if = {
-				limit = {
-					is_in_faction = yes
-				}
-				leave_faction = yes
-			}
-		}
-		CES = {
-			if = {
-				limit = {
-					country_exists = WBH
-				}
-				add_to_faction = WBH
-			}
-			if = {
-				limit = {
-					country_exists = TRL
-				}
-				add_to_faction = TRL
-			}
-			add_to_faction = EHT
-			add_to_faction = CHE
-			add_to_faction = PMR
-			add_to_faction = TOC
-		}#>
+		#WBH = {
+		#	if = {
+		#		limit = {
+		#			is_in_faction = yes
+		#		}
+		#		leave_faction = yes
+		#	}
+		#}
+		#PMR = {
+		#	if = {
+		#		limit = {
+		#			is_in_faction = yes
+		#		}
+		#		leave_faction = yes
+		#	}
+		#}
+		#TOC = {
+		#	if = {
+		#		limit = {
+		#			is_in_faction = yes
+		#		}
+		#		leave_faction = yes
+		#	}
+		#}
+		#CES = {
+		#	if = {
+		#		limit = {
+		#			country_exists = WBH
+		#		}
+		#		add_to_faction = WBH
+		#	}
+		#	if = {
+		#		limit = {
+		#			country_exists = TRL
+		#		}
+		#		add_to_faction = TRL
+		#	}
+		#	add_to_faction = EHT
+		#	add_to_faction = CHE
+		#	add_to_faction = PMR
+		#	add_to_faction = TOC
+		#}
 		WBH = {
 			add_ai_strategy = {
 				type = alliance
@@ -6849,22 +6849,22 @@ country_event = { #194 - Brotherhood Reformers
 	}
 }
 
-<#country_event = { #196 - Brotherhood Reformers
-	id = enc_reformers.196
-	title = enc_reformers.196.t
-	picture = GFX_event_MOJ_contact_the_west
-	fire_only_once = yes
-	desc = enc_reformers.194.d
-	is_triggered_only = yes
-	option = { #  Shoot reporter
-		name = enc_reformers.196.a
-		BOS = {
-			set_cosmetic_tag = ERB_BOS
-		}
-		add_ideas = maxsonsbulwark
-		set_country_flag = integrate_brotherhood
-	}
-}#>
+#country_event = { #196 - Brotherhood Reformers
+#	id = enc_reformers.196
+#	title = enc_reformers.196.t
+#	picture = GFX_event_MOJ_contact_the_west
+#	fire_only_once = yes
+#	desc = enc_reformers.194.d
+#	is_triggered_only = yes
+#	option = { #  Shoot reporter
+#		name = enc_reformers.196.a
+#		BOS = {
+#			set_cosmetic_tag = ERB_BOS
+#		}
+#		add_ideas = maxsonsbulwark
+#		set_country_flag = integrate_brotherhood
+#	}
+#}
 
 country_event = { #197 - War with Caesar and FEV
 	id = enc_reformers.197
@@ -6977,98 +6977,98 @@ country_event = { #200 -Police
 	}
 }
 
-<#country_event = { #195 - Brotherhood Civil War
-	id = enc_reformers.195
-	title = enc_reformers.195.t
-	picture = GFX_event_MOJ_contact_the_west
-	fire_only_once = yes
-	desc = enc_reformers.195.d
-	is_triggered_only = yes
-	option = { # Alliance
-		name = enc_reformers.195.a
-		BOS = {
-			add_popularity = {
-				ideology = people
-				popularity = 0.25
-			}
-		}
-		BOS = {
-			set_politics = {
-				ruling_party = people
-			}
-		}
-		BOS = {
-			add_opinion_modifier = {
-				target = ERB
-				modifier = enc_support_opinion
-			}
-		}
-		BOS = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ERB"
-				value = 600
-			}
-		}
-		BOS = {
-			start_civil_war = {
-				ideology = ruler
-				size = 0.65
-			}
-		}
-		if = {
-			limit = {
-				is_in_faction = no
-			}
-			create_faction = "The Enclave"
-			BOS = {
-				if = {
-					limit = {
-						is_in_faction = yes
-					}
-				}
-				leave_faction = yes
-			}
-			add_to_faction = BOS
-		}
-		else_if = {
-			limit = {
-				is_in_faction = yes
-			}
-			BOS = {
-				if = {
-					limit = {
-						is_in_faction = yes
-					}
-				}
-				leave_faction = yes
-			}
-			add_to_faction = BOS
-		}
-		else_if = {
-			limit = {
-				is_in_faction = no
-				BOS = {
-					is_in_faction = no
-				}
-			}
-			create_faction = "The Enclave"
-			add_to_faction = BOS
-		}
-		add_to_war = {
-			targeted_alliance = BOS
-			enemy = D01
-			hostility_reason = asked_to_join
-		}
-		BOS = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ERB"
-				value = 400
-			}
-		}
-	}
-}#>
+#country_event = { #195 - Brotherhood Civil War
+#	id = enc_reformers.195
+#	title = enc_reformers.195.t
+#	picture = GFX_event_MOJ_contact_the_west
+#	fire_only_once = yes
+#	desc = enc_reformers.195.d
+#	is_triggered_only = yes
+#	option = { # Alliance
+#		name = enc_reformers.195.a
+#		BOS = {
+#			add_popularity = {
+#				ideology = people
+#				popularity = 0.25
+#			}
+#		}
+#		BOS = {
+#			set_politics = {
+#				ruling_party = people
+#			}
+#		}
+#		BOS = {
+#			add_opinion_modifier = {
+#				target = ERB
+#				modifier = enc_support_opinion
+#			}
+#		}
+#		BOS = {
+#			add_ai_strategy = {
+#				type = alliance
+#				id = "ERB"
+#				value = 600
+#			}
+#		}
+#		BOS = {
+#			start_civil_war = {
+#				ideology = ruler
+#				size = 0.65
+#			}
+#		}
+#		if = {
+#			limit = {
+#				is_in_faction = no
+#			}
+#			create_faction = "The Enclave"
+#			BOS = {
+#				if = {
+#					limit = {
+#						is_in_faction = yes
+#					}
+#				}
+#				leave_faction = yes
+#			}
+#			add_to_faction = BOS
+#		}
+#		else_if = {
+#			limit = {
+#				is_in_faction = yes
+#			}
+#			BOS = {
+#				if = {
+#					limit = {
+#						is_in_faction = yes
+#					}
+#				}
+#				leave_faction = yes
+#			}
+#			add_to_faction = BOS
+#		}
+#		else_if = {
+#			limit = {
+#				is_in_faction = no
+#				BOS = {
+#					is_in_faction = no
+#				}
+#			}
+#			create_faction = "The Enclave"
+#			add_to_faction = BOS
+#		}
+#		add_to_war = {
+#			targeted_alliance = BOS
+#			enemy = D01
+#			hostility_reason = asked_to_join
+#		}
+#		BOS = {
+#			add_ai_strategy = {
+#				type = alliance
+#				id = "ERB"
+#				value = 400
+#			}
+#		}
+#	}
+#}
 
 country_event = { #201-Nation Remade
 	id = enc_reformers.201
@@ -8080,37 +8080,37 @@ country_event = { #227 - Broken Coast
 	}
 	option = { #Canadians
 		name = enc_reformers.227.a
-		<#WBH = {			#forces add to faction
-			if = {
-				limit = {
-					is_in_faction = no
-				}
-				create_faction = "The Iron Pact"
-				BRK = {
-					if = {
-						limit = {
-							is_in_faction = yes
-						}
-						leave_faction = yes
-					}
-				}
-				add_to_faction = BRK
-			}
-			else_if = {
-				limit = {
-					is_in_faction = yes
-				}
-				BRK = {
-					if = {
-						limit = {
-							is_in_faction = yes
-						}
-						leave_faction = yes
-					}
-				}
-				add_to_faction = BRK
-			}
-		}#>
+		#WBH = {			#forces add to faction
+		#	if = {
+		#		limit = {
+		#			is_in_faction = no
+		#		}
+		#		create_faction = "The Iron Pact"
+		#		BRK = {
+		#			if = {
+		#				limit = {
+		#					is_in_faction = yes
+		#				}
+		#				leave_faction = yes
+		#			}
+		#		}
+		#		add_to_faction = BRK
+		#	}
+		#	else_if = {
+		#		limit = {
+		#			is_in_faction = yes
+		#		}
+		#		BRK = {
+		#			if = {
+		#				limit = {
+		#					is_in_faction = yes
+		#				}
+		#				leave_faction = yes
+		#			}
+		#		}
+		#		add_to_faction = BRK
+		#	}
+		#}
 		WBH = {
 			add_ai_strategy = {
 				type = alliance
@@ -8433,36 +8433,36 @@ country_event = { #239 -Salt Lake City
 	}
 }
 
-<#country_event = { #240 -The Old Country		#steals the old country if you're winning >30%
-	id = enc_reformers.240
-	title = enc_reformers.240.t
-	desc = enc_reformers.240.d
-	picture = GFX_event_enc_ghouls
-	fire_only_once = yes
-	is_triggered_only = no
-	mean_time_to_happen = {
-		days = 5
-	}
-	trigger = {
-		ERB = {
-			has_war_with = WBH
-		}
-		has_completed_focus = enc_accept_ghouls
-		WBH = {
-			surrender_progress > .3
-		}
-		TOC = {
-			is_in_faction_with = WBH
-		}
-	}
-	option = { # Wee!
-		name = enc_reformers.240.a
-		WBH = {
-			release = TOC
-		}
-		puppet = TOC
-	}
-}#>
+#country_event = { #240 -The Old Country		#steals the old country if you're winning >30%
+#	id = enc_reformers.240
+#	title = enc_reformers.240.t
+#	desc = enc_reformers.240.d
+#	picture = GFX_event_enc_ghouls
+#	fire_only_once = yes
+#	is_triggered_only = no
+#	mean_time_to_happen = {
+#		days = 5
+#	}
+#	trigger = {
+#		ERB = {
+#			has_war_with = WBH
+#		}
+#		has_completed_focus = enc_accept_ghouls
+#		WBH = {
+#			surrender_progress > .3
+#		}
+#		TOC = {
+#			is_in_faction_with = WBH
+#		}
+#	}
+#	option = { # Wee!
+#		name = enc_reformers.240.a
+#		WBH = {
+#			release = TOC
+#		}
+#		puppet = TOC
+#	}
+#}
 
 country_event = { #241 -The Sheriff of Primm
 	id = enc_reformers.241
@@ -8529,37 +8529,37 @@ country_event = { #243 - Communist Uprising
 	}
 }
 
-<#country_event = { #244 - Heaven's Gates
-	id = enc_reformers.244
-	title = enc_reformers.244.t
-	desc = enc_reformers.244.d
-	picture = GFX_event_HEA_crusade
-	fire_only_once = yes
-	is_triggered_only = no
-	trigger = {
-		NOT = {
-			country_exists = NCN
-			country_exists = NCR
-		}
-	}
-	mean_time_to_happen = {
-		days = 400
-	}
-	option = { #More enemies!
-		name = enc_reformers.244.a
-		HEA = {
-			if = {
-				limit = {
-					is_in_faction = yes
-				}
-				dismantle_faction = yes
-			}
-		}
-		CES = {
-			add_to_faction = HEA
-		}
-	}
-}#>
+#country_event = { #244 - Heaven's Gates
+#	id = enc_reformers.244
+#	title = enc_reformers.244.t
+#	desc = enc_reformers.244.d
+#	picture = GFX_event_HEA_crusade
+#	fire_only_once = yes
+#	is_triggered_only = no
+#	trigger = {
+#		NOT = {
+#			country_exists = NCN
+#			country_exists = NCR
+#		}
+#	}
+#	mean_time_to_happen = {
+#		days = 400
+#	}
+#	option = { #More enemies!
+#		name = enc_reformers.244.a
+#		HEA = {
+#			if = {
+#				limit = {
+#					is_in_faction = yes
+#				}
+#				dismantle_faction = yes
+#			}
+#		}
+#		CES = {
+#			add_to_faction = HEA
+#		}
+#	}
+#}
 
 country_event = { #245 - GOAT
 	id = enc_reformers.245
@@ -10477,51 +10477,51 @@ news_event = { #339 - Halls of Montezuma		#look at this
 	}
 }
 
-<# news_event = { #340 - The Devils
-	id = enc_reformers.340
-	title = enc_reformers.340.t
-	desc = enc_reformers.340.d
-	picture = GFX_event_robots_3
-	fire_only_once = yes
-	trigger = {
-		tag = ERB
-		CES = {
-			has_war_with = ERB
-		}
-		CES = {
-			surrender_progress > 0.1
-		}
-	}
-	mean_time_to_happen = {
-		days = 3
-	}
-	option = { #shiit
-		name = enc_reformers.340.a
-		CES = {
-			if = {
-				limit = {
-					country_exists = ARM
-				}
-				add_to_faction = ARM
-			}
-		}
-		ARM = {
-			add_ai_strategy = {
-				type = alliance
-				id = "CES"
-				value = 200
-			}
-		}
-		CES = {
-			add_ai_strategy = {
-				type = alliance
-				id = "ARM"
-				value = 200
-			}
-		}
-		custom_effect_tooltip = enc_reformers.340.a_tt
-	}
-}#>
+# news_event = { #340 - The Devils
+#	id = enc_reformers.340
+#	title = enc_reformers.340.t
+#	desc = enc_reformers.340.d
+#	picture = GFX_event_robots_3
+#	fire_only_once = yes
+#	trigger = {
+#		tag = ERB
+#		CES = {
+#			has_war_with = ERB
+#		}
+#		CES = {
+#			surrender_progress > 0.1
+#		}
+#	}
+#	mean_time_to_happen = {
+#		days = 3
+#	}
+#	option = { #shiit
+#		name = enc_reformers.340.a
+#		CES = {
+#			if = {
+#				limit = {
+#					country_exists = ARM
+#				}
+#				add_to_faction = ARM
+#			}
+#		}
+#		ARM = {
+#			add_ai_strategy = {
+#				type = alliance
+#				id = "CES"
+#				value = 200
+#			}
+#		}
+#		CES = {
+#			add_ai_strategy = {
+#				type = alliance
+#				id = "ARM"
+#				value = 200
+#			}
+#		}
+#		custom_effect_tooltip = enc_reformers.340.a_tt
+#	}
+#}
 
 news_event = { #341 - Pan American League		#look at this
 	id = enc_reformers.341

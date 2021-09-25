@@ -3399,33 +3399,33 @@ focus_tree = {
 			# country_event = { id = enc_reformers.195 }
 		}
 	}
-	<#focus = {#Diplomacy - BOS - Sweet
-		id = enc_BOS_vengeance
-		icon = GFX_goal_america_brotherhood_faction
-		ai_will_do = { factor = 1 }
-		relative_position_id = enc_BOS_peace
-		x = 0
-		y = 1
-		cost = 40
-		prerequisite = { focus = enc_BOS_peace }
-		available = {
-			country_exists = BOS
-			NOT = {
-				has_war_with = BOS
-			}
-		}
-		completion_reward = {
-			puppet = BOS
-			transfer_state  = 548
-			transfer_state = 216
-			transfer_state = 474
-			country_event = { id = enc_reformers.196 }
-			hidden_effect = {
-				load_oob = "enc_bos_recruits_2"
-			}
-			custom_effect_tooltip = enc_BOS_vengeance.tt
-		}
-	}#>
+	#focus = {#Diplomacy - BOS - Sweet
+	#	id = enc_BOS_vengeance
+	#	icon = GFX_goal_america_brotherhood_faction
+	#	ai_will_do = { factor = 1 }
+	#	relative_position_id = enc_BOS_peace
+	#	x = 0
+	#	y = 1
+	#	cost = 40
+	#	prerequisite = { focus = enc_BOS_peace }
+	#	available = {
+	#		country_exists = BOS
+	#		NOT = {
+	#			has_war_with = BOS
+	#		}
+	#	}
+	#	completion_reward = {
+	#		puppet = BOS
+	#		transfer_state  = 548
+	#		transfer_state = 216
+	#		transfer_state = 474
+	#		country_event = { id = enc_reformers.196 }
+	#		hidden_effect = {
+	#			load_oob = "enc_bos_recruits_2"
+	#		}
+	#		custom_effect_tooltip = enc_BOS_vengeance.tt
+	#	}
+	#}
 	focus = {#Reform - war with BOS
 		id = enc_war_with_bos_reform
 		icon = GFX_goal_enc_war_with_bos_reform
