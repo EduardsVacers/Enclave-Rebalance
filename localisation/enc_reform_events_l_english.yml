@@ -1721,3 +1721,49 @@ enc_reformers.359.e: "Make an example out of the most unruly."
 enc_reformers.456.t: "These American States"
 enc_reformers.456.d: "Although [NCR.GetName] may have fallen, its people intend to hold [ERB.GetLeader]  to hispromises. Since the Great War the people of New California have developed independent cultures which do not necessarily agree with one another and are reluctant to give all of their power over to [ERB.GetGapital.GetName].  It will take time and effort to woo New California to the Reunited States."
 enc_reformers.456.a: "We shall bind up the nation's wounds."
+############################################################################################ 
+enc_reformers.700.t: "A Mysterious Offer"
+enc_reformers.700.d: "While Hayes is shifting through papers late at night he receives a knock on the door,a mysterious figure stood in front of him and handed over a paper detailing that if Hayes were to pursue a friendlier policy towards New Reno,they would be happy to support him in his campaign"
+enc_reformers.700.a: "Yes,i would appreciate the help thank and farewell."
+enc_reformers.700.b: "Thank you very much for the offer but i think you should go now,SECURITY"
+
+#######################################################################################
+enc_reformers.701.t: "A Mysterious Offer"
+enc_reformers.701.d: "While Jeremiah is shifting through papers late at night he receives a knock on the door,a mysterious figure stood in front of him and handed over a paper detailing that if Hayes were to pursue a friendlier policy towards New Reno,they would be happy to support him in his campaign"
+enc_reformers.701.a: "Yes,i would appreciate the help thank and farewell."
+enc_reformers.701.b: "Thank you very much for the offer but i think you should go now,SECURITY"
+
+##########################################################################
+enc_reformers.702.t: "A Mysterious Offer"
+enc_reformers.702.d: "While Slim is shifting through papers late at night he receives a knock on the door,a mysterious figure stood in front of him and handed over a paper detailing that if Hayes were to pursue a friendlier policy towards New Reno,they would be happy to support him in his campaign"
+enc_reformers.702.a: "Yes,i would appreciate the help thank and farewell."
+enc_reformers.702.b: "Thank you very much for the offer but i think you should go now,SECURITY"
+##########################################################################
+enc_reformers.703.t: "Hayes Agreed"
+enc_reformers.703.d: "Mr President we are happy to reprot that Hayes said yes"
+enc_reformers.703.a: "Excellent begin sending funds over at once"
+
+#######################################################
+enc_reformers.704.t: "Jeremiah Agreed"
+enc_reformers.704.d: "Mr President we are happy to reprot that Jeremiah said yes"
+enc_reformers.704.a: "Excellent begin sending funds over at once"
+##########################################################
+enc_reformers.705.t: "Slim Agreed"
+enc_reformers.705.d: "Mr President we are happy to reprot that Slim said yes"
+enc_reformers.705.a: "Excellent begin sending funds over at once"
+
+##########################################################
+enc_reformers.706.t: "Hayes said no"
+enc_reformers.706.d: "Mr President it seems that Hayes didnt trust a unknown mysterious figure claiming to be from New Reno offering him support in his election and our agent got arrested..."	 
+enc_reformers.706.a: "Ah well then call the chiefs of staff,this seems to be a job for the army"
+
+########################################################
+enc_reformers.707.t: "Jeremiah said no"
+enc_reformers.707.d: "Mr President it seems that Jeremiah didnt trust a unknown mysterious figure claiming to be from New Reno offering him support and our agent got arrested..."	 
+enc_reformers.707.a: "Ah well then call the chiefs of staff,this seems to be a job for the army"
+
+########################################################
+
+enc_reformers.708.t: "Slim said no"
+enc_reformers.708.d: "Mr President it seems that Slim didnt trust a unknown mysterious figure claiming to be from New Reno offering him support and our agent got arrested..."	 
+enc_reformers.708.a: "Ah well then call the chiefs of staff,this seems to be a job for the army"

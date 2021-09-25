@@ -11609,8 +11609,240 @@ country_event = { #356 - Now I have to Eat The Bloody thing?
 	}
 }
 
-counrty_event = {#356 - Allied States of America
+counrty_event = {#700 - A Mysterious Offer to NCR
+	id = enc_reformers.700
+	title = enc_reformers.700.t
+	desc = enc_reformers.700.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = enc_reformers.700.a
 
+		country_event = { id = enc_reformers.703 }
+	}
+	option = {
+		name = enc_reformers.700.b
+		country_event = { id = enc_reformers.706 }
+	}	
+}
+counrty_event = {#701 - A Mysterious Offer to Caanan
+	id = enc_reformers.701
+	title = enc_reformers.701.t
+	desc = enc_reformers.701.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = enc_reformers.701.a
+
+		country_event = { id = enc_reformers.704 }
+	}
+	option = {
+		name = enc_reformers.701.b
+		country_event = { id = enc_reformers.707 }
+	}	
+}
+counrty_event = {#702 - A Mysterious Offer to Klamath
+	id = enc_reformers.702
+	title = enc_reformers.702.t
+	desc = enc_reformers.702.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = enc_reformers.702.a
+
+		country_event = { id = enc_reformers.705 }
+	}
+	option = {
+		name = enc_reformers.702.b
+		country_event = { id = enc_reformers.708 }
+	}	
+}
+counrty_event = {#703 - Hayes Agreed
+	id = enc_reformers.703
+	title = enc_reformers.703.t
+	desc = enc_reformers.703.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = enc_reformers.703.a
+				ERB = { 
+					if = { 
+						limit = { is_in_faction = yes }
+						leave_faction = yes 
+					}
+				}
+				create_faction = "Allied States of America"
+				add_to_tech_sharing_group = Benjamin_Franklin_Society
+
+				every_other_country = {
+					limit = { 
+						is_in_faction_with = NCR 
+						NOT = {original_tag = NCR}
+					}
+					leave_faction = yes
+					ERB = {
+						add_to_faction = PREV
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = "ERB"
+						value = 200
+					}
+					add_to_tech_sharing_group = Benjamin_Franklin_Society
+				}
+
+				NCR = { 
+					if = { 
+						limit = { is_in_faction = yes }
+						leave_faction = yes 
+					}
+				}
+				add_to_faction = NCR
+				NCR = {
+					add_ai_strategy = {
+						type = alliance
+						id = "ERB"
+						value = 200
+					}
+					add_to_tech_sharing_group = Benjamin_Franklin_Society
+				}
+			#custom_effect_tooltip = enc_the_american_alliance_tt
+	}
+}
+counrty_event = {#704 - Jeremiah Agreed
+	id = enc_reformers.704
+	title = enc_reformers.704.t
+	desc = enc_reformers.704.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = enc_reformers.704.a
+				ERB = { 
+					if = { 
+						limit = { is_in_faction = yes }
+						leave_faction = yes 
+					}
+				}
+				create_faction = "Allied States of America"
+				add_to_tech_sharing_group = Benjamin_Franklin_Society
+
+				every_other_country = {
+					limit = { 
+						is_in_faction_with = NCN 
+						NOT = {original_tag = NCN}
+					}
+					leave_faction = yes
+					ERB = {
+						add_to_faction = PREV
+					}
+					add_ai_strategy = {
+						type = alliance
+						id = "ERB"
+						value = 200
+					}
+					add_to_tech_sharing_group = Benjamin_Franklin_Society
+				}
+
+				NCN = { 
+					if = { 
+						limit = { is_in_faction = yes }
+						leave_faction = yes 
+					}
+				}
+				add_to_faction = NCN
+				NCN = {
+					add_ai_strategy = {
+						type = alliance
+						id = "ERB"
+						value = 200
+					}
+					add_to_tech_sharing_group = Benjamin_Franklin_Society
+				}
+			#custom_effect_tooltip = enc_the_state_of_utah_tt
+	}	
+}
+counrty_event = {#705 - Slim Agreed
+	id = enc_reformers.705
+	title = enc_reformers.705.t
+	desc = enc_reformers.705.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = enc_reformers.705.a
+
+		country_event = { id = enc_reformers.120 }
+		KLA = { add_to_tech_sharing_group = Benjamin_Franklin_Society }
+		#hidden_effect = {
+			BEL = {
+				every_owned_state = {
+					add_core_of = KLA
+				}
+			}
+			TRL = {
+				every_owned_state = {
+					add_core_of = KLA
+				}
+			}
+			BDT = {
+				every_owned_state = {
+					add_core_of = KLA
+				}
+			}
+			ARR = {
+				every_owned_state = {
+					add_core_of = KLA
+				}
+			}
+			MLT = {
+				every_owned_state = {
+					add_core_of = KLA
+				}
+			}
+			MDT = {
+				every_owned_state = {
+					add_core_of = KLA
+				}
+			}
+			PMR = {
+				every_owned_state = {
+					add_core_of = KLA
+				}
+			}
+		#}
+	}
+}
+counrty_event = {#706 - Hayes said no
+	id = enc_reformers.706
+	title = enc_reformers.706.t
+	desc = enc_reformers.706.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = enc_reformers.706.a
+		ERB = { create_wargoal = { type = annex_everything target = NCR } }
+	}	
+}
+counrty_event = {#707 - Jeremiah said no
+	id = enc_reformers.707
+	title = enc_reformers.707.t
+	desc = enc_reformers.707.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = enc_reformers.707.a
+		ERB = { create_wargoal = { type = annex_everything target = NCN } }
+	}	
+}
+counrty_event = {#708 - Slim said no
+	id = enc_reformers.708
+	title = enc_reformers.708.t
+	desc = enc_reformers.708.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = enc_reformers.708.a
+		ERB = { create_wargoal = { type = annex_everything target = KLA } }
+	}	
 }
 # country_event = {#355 - War with Caesar Speech
 # id = enc_reformers.355

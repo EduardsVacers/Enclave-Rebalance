@@ -5143,50 +5143,7 @@ focus = {#NEVADA - second city
 			focus = enc_Nevada_dollar 
 		}
 		completion_reward = {
-			hidden_effect = {
-				ERB = { 
-					if = { 
-						limit = { is_in_faction = yes }
-						leave_faction = yes 
-					}
-				}
-				create_faction = "Allied States of America"
-				add_to_tech_sharing_group = Benjamin_Franklin_Society
-
-				every_other_country = {
-					limit = { 
-						is_in_faction_with = NCR 
-						NOT = {original_tag = NCR}
-					}
-					leave_faction = yes
-					ERB = {
-						add_to_faction = PREV
-					}
-					add_ai_strategy = {
-						type = alliance
-						id = "ERB"
-						value = 200
-					}
-					add_to_tech_sharing_group = Benjamin_Franklin_Society
-				}
-
-				NCR = { 
-					if = { 
-						limit = { is_in_faction = yes }
-						leave_faction = yes 
-					}
-				}
-				add_to_faction = NCR
-				NCR = {
-					add_ai_strategy = {
-						type = alliance
-						id = "ERB"
-						value = 200
-					}
-					add_to_tech_sharing_group = Benjamin_Franklin_Society
-				}
-			}
-			custom_effect_tooltip = enc_the_american_alliance_tt
+			NCR = { country_event {id = enc_reformers.700}}
 		}
 	}
 
@@ -5201,50 +5158,7 @@ focus = {#NEVADA - second city
 		cost = 30
 		prerequisite = { focus = enc_the_american_alliance }
 		completion_reward = {
-			hidden_effect = {
-				ERB = { 
-					if = { 
-						limit = { is_in_faction = yes }
-						leave_faction = yes 
-					}
-				}
-				create_faction = "Allied States of America"
-				add_to_tech_sharing_group = Benjamin_Franklin_Society
-
-				every_other_country = {
-					limit = { 
-						is_in_faction_with = NCN 
-						NOT = {original_tag = NCN}
-					}
-					leave_faction = yes
-					ERB = {
-						add_to_faction = PREV
-					}
-					add_ai_strategy = {
-						type = alliance
-						id = "ERB"
-						value = 200
-					}
-					add_to_tech_sharing_group = Benjamin_Franklin_Society
-				}
-
-				NCN = { 
-					if = { 
-						limit = { is_in_faction = yes }
-						leave_faction = yes 
-					}
-				}
-				add_to_faction = NCN
-				NCN = {
-					add_ai_strategy = {
-						type = alliance
-						id = "ERB"
-						value = 200
-					}
-					add_to_tech_sharing_group = Benjamin_Franklin_Society
-				}
-			}
-			custom_effect_tooltip = enc_the_state_of_utah_tt
+			NCN = { country_event = { id = enc_reformers.701 }}
 		}
 	}
 	focus = {#NEVADA- Mexico
@@ -5430,47 +5344,10 @@ focus = {#NEVADA - second city
 		cost = 40
 		prerequisite = { focus = enc_the_american_alliance }
 		completion_reward = {
-		country_event = { id = enc_reformers.120 }
-		KLA = { add_to_tech_sharing_group = Benjamin_Franklin_Society }
-		hidden_effect = {
-			BEL = {
-				every_owned_state = {
-					add_core_of = KLA
-				}
-			}
-			TRL = {
-				every_owned_state = {
-					add_core_of = KLA
-				}
-			}
-			BDT = {
-				every_owned_state = {
-					add_core_of = KLA
-				}
-			}
-			ARR = {
-				every_owned_state = {
-					add_core_of = KLA
-				}
-			}
-			MLT = {
-				every_owned_state = {
-					add_core_of = KLA
-				}
-			}
-			MDT = {
-				every_owned_state = {
-					add_core_of = KLA
-				}
-			}
-			PMR = {
-				every_owned_state = {
-					add_core_of = KLA
-				}
-			}
+		KLA = { country_event = { id = enc_reformers.702 }}
 		}
 	}
-}
+
 	focus = {#Diplomacy - Northwest
 		id = enc_Wash_BOS
 		icon = GFX_goal_BRK_seattles_exorcism
@@ -5481,13 +5358,13 @@ focus = {#NEVADA - second city
 		cost = 40
 		prerequisite = { focus = enc_pacific_commonwealth }
 		completion_reward = {
-		ERB = { create_wargoal = { type = annex_everything target = WBH }
+		ERB = { create_wargoal = { type = annex_everything target = WBH }}
 		WBH = {
 			every_owned_state = {
 				add_core_of = KLA
-			}
-			}			}
-	}
+				}
+			}			
+		}
 	}
 
 	focus = {#Baseball
