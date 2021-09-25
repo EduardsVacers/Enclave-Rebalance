@@ -3399,6 +3399,7 @@ focus_tree = {
 			# country_event = { id = enc_reformers.195 }
 		}
 	}
+
 	#focus = {#Diplomacy - BOS - Sweet
 	#	id = enc_BOS_vengeance
 	#	icon = GFX_goal_america_brotherhood_faction
@@ -3426,6 +3427,7 @@ focus_tree = {
 	#		custom_effect_tooltip = enc_BOS_vengeance.tt
 	#	}
 	#}
+
 	focus = {#Reform - war with BOS
 		id = enc_war_with_bos_reform
 		icon = GFX_goal_enc_war_with_bos_reform

@@ -4618,7 +4618,7 @@ ENC_down_mexico_way = {
 		}
 		days_remove = 30
 		remove_effect = {
-			add_to_faction = FROM
+			give_guarantee = FROM
 		}
 	}
 }

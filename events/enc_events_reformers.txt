@@ -11608,6 +11608,10 @@ country_event = { #356 - Now I have to Eat The Bloody thing?
 		}
 	}
 }
+
+counrty_event = {#356 - Allied States of America
+
+}
 # country_event = {#355 - War with Caesar Speech
 # id = enc_reformers.355
 # title = enc_reformers.355.t
