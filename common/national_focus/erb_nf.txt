@@ -3424,8 +3424,8 @@ focus_tree = {
 				load_oob = "enc_bos_recruits_2"
 			}
 			custom_effect_tooltip = enc_BOS_vengeance.tt
-		}#>
-	}
+		}
+	}#>
 	focus = {#Reform - war with BOS
 		id = enc_war_with_bos_reform
 		icon = GFX_goal_enc_war_with_bos_reform
