@@ -883,7 +883,7 @@ country_event = { #24 - Wound heals
 	}
 }
 
-country_event = { #25 - NCR - CES War
+country_event = { #25 - NCR - CES War		#look at this
 	id = enc_reformers.25
 	title = enc_reformers.25.t
 	desc = enc_reformers.25.d
@@ -2200,7 +2200,7 @@ country_event = { #60 - From the Top Down
 	}
 }
 
-country_event = { #61 - Operation Augustus
+country_event = { #61 - Operation Augustus		#look at this
 	id = enc_reformers.61
 	title = enc_reformers.61.t
 	desc = enc_reformers.61.d
@@ -2219,7 +2219,7 @@ country_event = { #61 - Operation Augustus
 	}
 }
 
-country_event = { #64 - Declarations of Independence
+country_event = { #64 - Declarations of Independence		#look at this
 	id = enc_reformers.64
 	title = enc_reformers.64.t
 	desc = enc_reformers.64.d
@@ -2232,7 +2232,7 @@ country_event = { #64 - Declarations of Independence
 	}
 }
 
-country_event = { #65 - The Emancipation Proclamations
+country_event = { #65 - The Emancipation Proclamations		#look at this
 	id = enc_reformers.65
 	title = enc_reformers.65.t
 	desc = enc_reformers.65.d
@@ -2567,7 +2567,7 @@ country_event = { #73 Forgotten Man
 	}
 }
 
-country_event = { #74 - Civil War
+country_event = { #74 - Civil War		#look at this
 	id = enc_reformers.74
 	title = enc_reformers.74.t
 	desc = enc_reformers.74.d
@@ -2615,7 +2615,7 @@ country_event = { #74 - Civil War
 	}
 }
 
-country_event = { #75 - Civil War
+country_event = { #75 - Civil War		#look at this
 	id = enc_reformers.75
 	title = enc_reformers.75.t
 	desc = enc_reformers.75.d
@@ -3274,7 +3274,7 @@ country_event = { #100 Christmas
 	}
 }
 
-country_event = { #101 Axis of Evil
+country_event = { #101 Axis of Evil		#look at this
 	id = enc_reformers.101
 	title = enc_reformers.101.t
 	desc = enc_reformers.101.d
@@ -3283,7 +3283,7 @@ country_event = { #101 Axis of Evil
 	is_triggered_only = yes
 	option = { # Bringit
 		name = enc_reformers.101.a
-		WBH = {
+		<#WBH = {
 			if = {
 				limit = {
 					is_in_faction = yes
@@ -3324,7 +3324,7 @@ country_event = { #101 Axis of Evil
 			add_to_faction = CHE
 			add_to_faction = PMR
 			add_to_faction = TOC
-		}
+		}#>
 		WBH = {
 			add_ai_strategy = {
 				type = alliance
@@ -3715,7 +3715,7 @@ country_event = { #109 The Liberation of Hoover Dam
 	}
 }
 
-country_event = { #110 - BOS Legionaries
+country_event = { #110 - BOS Legionaries	#look at this
 	id = enc_reformers.110
 	title = enc_reformers.110.t
 	desc = enc_reformers.110.d
@@ -4373,7 +4373,7 @@ country_event = { #119 NCR
 	}
 }
 
-country_event = { #120 PNW
+country_event = { #120 PNW		#look at this
 	id = enc_reformers.120
 	title = enc_reformers.120.t
 	desc = enc_reformers.120.d
@@ -6849,7 +6849,7 @@ country_event = { #194 - Brotherhood Reformers
 	}
 }
 
-country_event = { #196 - Brotherhood Reformers
+<#country_event = { #196 - Brotherhood Reformers
 	id = enc_reformers.196
 	title = enc_reformers.196.t
 	picture = GFX_event_MOJ_contact_the_west
@@ -6864,7 +6864,7 @@ country_event = { #196 - Brotherhood Reformers
 		add_ideas = maxsonsbulwark
 		set_country_flag = integrate_brotherhood
 	}
-}
+}#>
 
 country_event = { #197 - War with Caesar and FEV
 	id = enc_reformers.197
@@ -6977,7 +6977,7 @@ country_event = { #200 -Police
 	}
 }
 
-country_event = { #195 - Brotherhood Civil War
+<#country_event = { #195 - Brotherhood Civil War
 	id = enc_reformers.195
 	title = enc_reformers.195.t
 	picture = GFX_event_MOJ_contact_the_west
@@ -7068,7 +7068,7 @@ country_event = { #195 - Brotherhood Civil War
 			}
 		}
 	}
-}
+}#>
 
 country_event = { #201-Nation Remade
 	id = enc_reformers.201
@@ -7118,7 +7118,7 @@ news_event = { #202 - Overextended Legion
 	option = { # Lol Cucks
 		name = enc_reformers.202.a
 		CES = {
-			add_ideas = enc_NCR__ces_resistance
+			add_ideas = enc_NCR__ces_resistance		#look at this
 		}
 		create_wargoal = {
 			type = annex_everything
@@ -8009,7 +8009,7 @@ country_event = { #225 - Washington Brotherhood Attacks!
 	}
 }
 
-country_event = { #226 - TRL Buff
+country_event = { #226 - TRL Buff		#look at this
 	id = enc_reformers.226
 	title = enc_reformers.226.t
 	desc = enc_reformers.226.d
@@ -8080,7 +8080,7 @@ country_event = { #227 - Broken Coast
 	}
 	option = { #Canadians
 		name = enc_reformers.227.a
-		WBH = {
+		<#WBH = {			#forces add to faction
 			if = {
 				limit = {
 					is_in_faction = no
@@ -8110,7 +8110,7 @@ country_event = { #227 - Broken Coast
 				}
 				add_to_faction = BRK
 			}
-		}
+		}#>
 		WBH = {
 			add_ai_strategy = {
 				type = alliance
@@ -8283,7 +8283,7 @@ news_event = { #233 - Legion Conquest of New Canaan
 	option = { # Now they're a threat
 		name = enc_reformers.233.a
 		CES = {
-			add_ideas = ENC_terror_of_wastes
+			add_ideas = ENC_terror_of_wastes		#look at this
 		}
 		WHT = {
 			complete_national_focus = wht_coronation_of_the_brute
@@ -8433,7 +8433,7 @@ country_event = { #239 -Salt Lake City
 	}
 }
 
-country_event = { #240 -The Old Country
+<#country_event = { #240 -The Old Country		#steals the old country if you're winning >30%
 	id = enc_reformers.240
 	title = enc_reformers.240.t
 	desc = enc_reformers.240.d
@@ -8462,7 +8462,7 @@ country_event = { #240 -The Old Country
 		}
 		puppet = TOC
 	}
-}
+}#>
 
 country_event = { #241 -The Sheriff of Primm
 	id = enc_reformers.241
@@ -8529,7 +8529,7 @@ country_event = { #243 - Communist Uprising
 	}
 }
 
-country_event = { #244 - Heaven's Gates
+<#country_event = { #244 - Heaven's Gates
 	id = enc_reformers.244
 	title = enc_reformers.244.t
 	desc = enc_reformers.244.d
@@ -8559,7 +8559,7 @@ country_event = { #244 - Heaven's Gates
 			add_to_faction = HEA
 		}
 	}
-}
+}#>
 
 country_event = { #245 - GOAT
 	id = enc_reformers.245
@@ -9863,7 +9863,7 @@ news_event = { #323 - Fall of Rio
 	}
 }
 
-news_event = { #324 - Armageddon Station
+news_event = { #324 - Armageddon Station		#look at this
 	id = enc_reformers.324
 	title = enc_reformers.324.t
 	desc = enc_reformers.324.d
@@ -9888,7 +9888,7 @@ news_event = { #324 - Armageddon Station
 	}
 }
 
-news_event = { #325 - Baron Plot
+news_event = { #325 - Baron Plot		#look at this
 	id = enc_reformers.325
 	title = enc_reformers.325.t
 	desc = enc_reformers.325.d
@@ -9927,7 +9927,7 @@ news_event = { #325 - Baron Plot
 	}
 }
 
-news_event = { #326 - Baja Blues
+news_event = { #326 - Baja Blues		#look at this
 	id = enc_reformers.326
 	title = enc_reformers.326.t
 	desc = enc_reformers.326.d
@@ -10228,7 +10228,7 @@ country_event = { #331 - Baron's Brew 2
 	}
 }
 
-news_event = { #332 - Baron Bends the Knee
+news_event = { #332 - Baron Bends the Knee		#look at this
 	id = enc_reformers.332
 	title = enc_reformers.332.t
 	desc = enc_reformers.332.d
@@ -10438,7 +10438,7 @@ news_event = { #338 - Santa Muerte
 	}
 }
 
-news_event = { #339 - Halls of Montezuma
+news_event = { #339 - Halls of Montezuma		#look at this
 	id = enc_reformers.339
 	title = enc_reformers.339.t
 	desc = enc_reformers.339.d
@@ -10477,7 +10477,7 @@ news_event = { #339 - Halls of Montezuma
 	}
 }
 
-news_event = { #340 - The Devils
+<# news_event = { #340 - The Devils
 	id = enc_reformers.340
 	title = enc_reformers.340.t
 	desc = enc_reformers.340.d
@@ -10521,9 +10521,9 @@ news_event = { #340 - The Devils
 		}
 		custom_effect_tooltip = enc_reformers.340.a_tt
 	}
-}
+}#>
 
-news_event = { #341 - Pan American League
+news_event = { #341 - Pan American League		#look at this
 	id = enc_reformers.341
 	title = enc_reformers.341.t
 	desc = enc_reformers.341.d
@@ -10548,7 +10548,7 @@ news_event = { #341 - Pan American League
 }
 
 
-country_event = { #344 - Mexican Territory
+country_event = { #344 - Mexican Territory		#look at this
 	id = enc_reformers.344
 	title = enc_reformers.344.t
 	desc = enc_reformers.344.d
@@ -10855,7 +10855,7 @@ country_event = { #351 - Mexican Turkey
 	}
 }
 
-country_event = { #352 - Mexican Protests
+country_event = { #352 - Mexican Protests		#look at this
 	id = enc_reformers.352
 	title = enc_reformers.352.t
 	desc = enc_reformers.352.d
@@ -11043,7 +11043,7 @@ country_event = { #352 - Mexican Protests
 	}
 }
 
-country_event = { #353 - Mexican Protests
+country_event = { #353 - Mexican Protests		#look at this
 	id = enc_reformers.353
 	title = enc_reformers.353.t
 	desc = enc_reformers.353.d
@@ -11247,7 +11247,7 @@ country_event = { #353 - Mexican Protests
 	}
 }
 
-country_event = { #354 - The War of Independence
+country_event = { #354 - The War of Independence		#look at this
 	id = enc_reformers.354
 	title = enc_reformers.354.t
 	desc = enc_reformers.354.d
