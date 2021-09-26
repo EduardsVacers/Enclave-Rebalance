@@ -1230,60 +1230,60 @@ enc_executive_orders = {
 		}
 		days_re_enable = 69
 	}
-	ENC_sabotage_ces_supply_lines = {
-		icon = generic_ignite_civil_war
-		cost = 100
-		visible = {
-			has_country_flag = enc_intervention_flag
-			NCR = {
-				has_war_with = CES
-			}
-		}
-		available = {
-			NCR = {
-				surrender_progress > 0.1				# NCR has lost some territory
-			}
-		}
-		complete_effect = {
-			CES = {
-				white_peace = {
-					tag = NCR
-				}
-				set_truce = {
-					target = NCR
-					days = 356
-				}
-			}
-			clr_country_flag = enc_intervention_flag
-		}
-	}
-	ENC_sabotage_ncr_supply_lines = {
-		icon = generic_ignite_civil_war
-		cost = 100
-		visible = {
-			has_country_flag = enc_intervention_flag
-			NCR = {
-				has_war_with = CES
-			}
-		}
-		available = {
-			CES = {
-				surrender_progress > 0.1				# NCR has lost some territory
-			}
-		}
-		complete_effect = {
-			NCR = {
-				white_peace = {
-					tag = CES
-				}
-				set_truce = {
-					target = CES
-					days = 356
-				}
-			}
-			clr_country_flag = enc_intervention_flag
-		}
-	}
+	#ENC_sabotage_ces_supply_lines = {
+	#	icon = generic_ignite_civil_war
+	#	cost = 100
+	#	visible = {
+	#		has_country_flag = enc_intervention_flag
+	#		NCR = {
+	#			has_war_with = CES
+	#		}
+	#	}
+	#	available = {
+	#		NCR = {
+	#			surrender_progress > 0.1				# NCR has lost some territory
+	#		}
+	#	}
+	#	complete_effect = {
+	#		CES = {
+	#			white_peace = {
+	#				tag = NCR
+	#			}
+	#			set_truce = {
+	#				target = NCR
+	#				days = 356
+	#			}
+	#		}
+	#		clr_country_flag = enc_intervention_flag
+	#	}
+	#}
+	#ENC_sabotage_ncr_supply_lines = {
+	#	icon = generic_ignite_civil_war
+	#	cost = 100
+	#	visible = {
+	#		has_country_flag = enc_intervention_flag
+	#		NCR = {
+	#			has_war_with = CES
+	#		}
+	#	}
+	#	available = {
+	#		CES = {
+	#			surrender_progress > 0.1				# NCR has lost some territory
+	#		}
+	#	}
+	#	complete_effect = {
+	#		NCR = {
+	#			white_peace = {
+	#				tag = CES
+	#			}
+	#			set_truce = {
+	#				target = CES
+	#				days = 356
+	#			}
+	#		}
+	#		clr_country_flag = enc_intervention_flag
+	#	}
+	#}
 	convert_command_power = { #reduced research for increased war support
 		icon = decision_enc_officer
 		allowed = {
